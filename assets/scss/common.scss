@@ -1,0 +1,48 @@
+//variables
+$gold: #916019;
+$d-gray: #8D8D8D;
+$l-gray: #E0E0E0;
+
+//mixins
+@mixin btn($theme: #fff, $font-size: 20px) {
+    width: 350px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid $theme;
+    color: $theme;
+    font-size: $font-size;
+    cursor: pointer;
+}
+
+//common setting
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PingFangTC-Regular', 'Noto Sans TC', 'SF Pro Text', 'sans-serif';
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+.header {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 9px 0;
+    }
+
+    h1 {
+        width: 128px;
+        height: 38px;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-image: url("../assets/image/d_Perfume.png");
+        // background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume.png?raw=true);
+    }
+
+    a {
+        color: $d-gray;
+        vertical-align: middle;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    ul {
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+            margin-left: 30px;
+        }
+    }
+}

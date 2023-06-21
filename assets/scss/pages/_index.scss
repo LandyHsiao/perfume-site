@@ -1,0 +1,109 @@
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.banner {
+    width: 100%;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 295px 0;
+
+    .wrap {
+        width: 445px;
+        margin-left: 665px;
+        color: #fff;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        button {
+            @include btn($theme: #fff, $font-size: 28px);
+            margin-top: 16px;
+        }
+    }
+}
+
+.content {
+    .intro {
+        margin: 60px auto;
+    }
+
+    .text {
+        width: 50%;
+        justify-content: center;
+        flex-direction: column;
+
+        .wrap {
+            margin: 0 20%;
+
+            p {
+                font-size: 20px;
+            }
+
+            a.more {
+                font-size: 16px;
+                color: $gold;
+                text-decoration: none;
+                margin-top: 16px;
+            }
+        }
+    }
+
+    .img-wrap {
+        width: 50%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    .intro li:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .intro li:nth-child(4) {
+        li {
+            margin: 10% 20%;
+        }
+
+        .text {
+            button {
+                @include btn($theme: #000, $font-size: 20px);
+            }
+        }
+
+        .img-wrap {
+            img {
+                width: 100%;
+                aspect-ratio: 1 /1.96;
+                // object-fit: scale-down;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 4px;
+        }
+    }
+}
+
+.content {
+    .sale {
+        background-color: $l-gray;
+        
+    }
+}
