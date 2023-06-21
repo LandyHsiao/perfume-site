@@ -13,7 +13,7 @@
                 color: $d-gray;
                 margin-bottom: 20px;
             }
-            .email{
+            .email {
                 font-size: 16px;
                 input {
                     border-radius: 4px 0 0 4px;
@@ -32,11 +32,44 @@
                     width: 131px;
                     background-color: $gold;
                     cursor: pointer;
+
+                    &:hover{
+                        font-size: 18px;
+                    }
                 }
             }
         }
     }
-    .bg-full{
+    .bg-full {
         background-color: $gold;
+        color: #fff;
+        vertical-align: middle;
+        .container {
+            justify-content: space-between;
+        }
+        .wrap {
+            margin: 20px 0 22px 0;
+            align-items: center;
+            img {
+                width: 128px;
+                margin-right: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        ul {
+            align-items: center;
+            li {
+                margin-left: 36px;
+            }
+            a {
+                color: #fff;
+                &:hover{
+                    text-decoration: underline;
+                    text-underline-offset: 5px;
+                }
+            }
+        }
     }
 }

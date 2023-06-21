@@ -20,6 +20,19 @@ h4 {
     vertical-align: middle;
 }
 
+a.more {
+    font-size: 16px;
+    color: $gold;
+    text-decoration: none;
+    margin-top: 16px;
+
+    &:hover::before {
+        content: '\25B6\25ba';
+        margin-right: 3px;
+        font-size: 14px;
+    }
+}
+
 .banner {
     width: 100%;
     background-image: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index1.jpg);
@@ -44,7 +57,7 @@ h4 {
         button:hover {
             border-color: $gold;
             color: $gold;
-            background-color: #fff;
+            background-color: rgba($color: #fff, $alpha: 0.5);
         }
     }
 }
@@ -101,7 +114,7 @@ h4 {
             button:hover {
                 border-color: $gold;
                 color: $gold;
-                background-color: #fff;
+                background-color: rgba($color: #fff, $alpha: 0.5);
             }
         }
 
@@ -123,20 +136,53 @@ h4 {
 .content {
     .sale {
         background-color: $l-gray;
+        margin-bottom: 60px;
         ul {
             justify-content: space-between;
         }
         li{
             width: 31.8%;
+            margin: 40px 0;
         }
-        li:nth-child(1){
-            background-image: url(../assets/image/index6.jpg);
+        img {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 35 / 54;
+            margin-bottom: 8px;
+            transition: transform .2s;
+            &:hover{
+                transform: scale(.9);
+            }
         }
-        li:nth-child(2){
-            background-image: url(../assets/image/index7.jpg);
+        a.sold-out{
+            position: relative;
+            img{
+                filter: brightness(70%);
+            }
+            &::after{
+                content: 'Sold out';
+                display: block;
+                width: 160px;
+                z-index: 10;
+                color: #fff;
+                position: absolute;
+                font-size: 24px;
+                top: calc(50% - 36px);
+                left: calc(50% - 160px / 2);
+                text-align: center;
+            }
         }
-        li:nth-child(3){
-            background-image: url(../assets/image/index8.jpg);
+        p , span{
+            font-size: 16px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        span.on-sale::after {
+            content: 'NT$1,580';
+            color: $d-gray;
+            margin-left: 8px;
+            text-decoration: line-through;
         }
     }
 }
