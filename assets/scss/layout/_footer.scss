@@ -1,0 +1,42 @@
+.footer {
+    .bg-full-img {
+        background-image: url(../assets/image/index10.jpg);
+        background-position: 0 48%;
+        background-size: cover;
+        .container {
+            padding: 312px 0 112px 0;
+        }
+        .wrap {
+            max-width: 350px;
+            > p {
+                font-size: 32px;
+                color: $d-gray;
+                margin-bottom: 20px;
+            }
+            .email{
+                font-size: 16px;
+                input {
+                    border-radius: 4px 0 0 4px;
+                    border: 2px solid $gold;
+                    height: 60px;
+                    padding: 0 16px;
+                }
+                input[type="email"]:focus {
+                    outline: none;
+                }
+                button {
+                    border-radius: 0 4px 4px 0;
+                    border: 2px solid $gold;
+                    height: 60px;
+                    color: #fff;
+                    width: 131px;
+                    background-color: $gold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .bg-full{
+        background-color: $gold;
+    }
+}

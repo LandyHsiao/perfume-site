@@ -1,3 +1,12 @@
+// @use '../reset';
+// @use './common';
+// @use '../layout/header';
+// @use '../layout/footer';
+
+// * {
+//     outline: 1px solid red;
+// }
+
 h3 {
     font-size: 32px;
     font-weight: 700;
@@ -32,6 +41,11 @@ h4 {
             @include btn($theme: #fff, $font-size: 28px);
             margin-top: 16px;
         }
+        button:hover {
+            border-color: $gold;
+            color: $gold;
+            background-color: #fff;
+        }
     }
 }
 
@@ -40,7 +54,7 @@ h4 {
         margin: 60px auto;
     }
 
-    .text {
+    .intro .text {
         width: 50%;
         justify-content: center;
         flex-direction: column;
@@ -61,7 +75,7 @@ h4 {
         }
     }
 
-    .img-wrap {
+    .intro .img-wrap {
         width: 50%;
 
         img {
@@ -84,6 +98,11 @@ h4 {
             button {
                 @include btn($theme: #000, $font-size: 20px);
             }
+            button:hover {
+                border-color: $gold;
+                color: $gold;
+                background-color: #fff;
+            }
         }
 
         .img-wrap {
@@ -104,6 +123,51 @@ h4 {
 .content {
     .sale {
         background-color: $l-gray;
-        
+        ul {
+            justify-content: space-between;
+        }
+        li{
+            width: 31.8%;
+        }
+        li:nth-child(1){
+            background-image: url(../assets/image/index6.jpg);
+        }
+        li:nth-child(2){
+            background-image: url(../assets/image/index7.jpg);
+        }
+        li:nth-child(3){
+            background-image: url(../assets/image/index8.jpg);
+        }
+    }
+}
+
+.content {
+    .recycle {
+        justify-content: space-between;
+        margin-bottom: 60px;
+        img {
+            max-width: 730px;
+        }
+        .text {
+            max-width: 350px;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            .wrap {
+                p {
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+                p:nth-of-type(2) {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
+                a.more {
+                    font-size: 16px;
+                    color: $gold;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
