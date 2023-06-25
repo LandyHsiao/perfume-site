@@ -37,3 +37,32 @@
         }
     }
 }
+
+@media(max-width: 992px) {
+    .header {
+        .logo {
+            margin: 9px 0 9px 5px;
+        }
+        .shopping-cart {
+            position: relative;
+            
+            //npt work
+            a span.pop-number {
+                display: block;
+                position: absolute;
+                font-weight: 12px;
+                color: #fff;
+                background-color: $gold;
+                line-height: 1;
+            }
+        }
+
+        //wrong size
+        .hamburger {
+            font-size: 20px;
+        }
+    }
+
+    
+    
+}
