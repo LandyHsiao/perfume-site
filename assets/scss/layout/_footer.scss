@@ -73,3 +73,15 @@
         }
     }
 }
+
+@media(max-width: 992px){
+    .footer {
+        .bg-full-img {
+            background-position: 25% 0;
+            .container {
+                max-width: 992px;
+                padding: 312px 15px 192px 15px;
+            }
+        }
+    }
+}

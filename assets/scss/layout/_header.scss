@@ -28,12 +28,13 @@
         }
     }
 
-    ul {
+    ul.menu {
         justify-content: flex-end;
         align-items: center;
-
+        
         li {
             margin-left: 30px;
+            color: $d-gray;
         }
     }
 }
@@ -43,23 +44,15 @@
         .logo {
             margin: 9px 0 9px 5px;
         }
-        .shopping-cart {
-            position: relative;
-            
-            //npt work
-            a span.pop-number {
-                display: block;
-                position: absolute;
-                font-weight: 12px;
-                color: #fff;
-                background-color: $gold;
-                line-height: 1;
-            }
-        }
 
         //wrong size
-        .hamburger {
-            font-size: 20px;
+        .hamburger .material-icons {
+            font-size: 30px;
+            vertical-align: middle;
+            &:hover {
+                cursor: pointer;
+                color: $gold;
+            }
         }
     }
 

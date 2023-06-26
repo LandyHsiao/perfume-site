@@ -1,9 +1,9 @@
-//variables
+/* variables */
 $gold: #916019;
 $d-gray: #8D8D8D;
 $l-gray: #E0E0E0;
 
-//mixins
+/* mixins */
 @mixin btn($theme: #fff, $font-size: 20px) {
     width: 350px;
     height: 60px;
@@ -15,8 +15,8 @@ $l-gray: #E0E0E0;
     cursor: pointer;
 }
 
-//common setting
-* {
+/* common setting */
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -49,7 +49,11 @@ img {
     display: none;
 }
 
+.material-icons {
+    vertical-align: middle;
+}
 
+/* RWD for non-PC layout*/
 @media(max-width: 992px){
     .container {
         max-width: 992px;
